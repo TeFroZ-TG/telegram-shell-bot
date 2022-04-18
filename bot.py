@@ -31,7 +31,7 @@ def validate_settings():
         return
     if not (settings.CMD_WHITE_LIST or settings.ONLY_SHORTCUT_CMD):
         raise Exception(
-            "It a public bot. "
+            "It a private bot. "
             "Public bot is not safe, dont's use root to run this bot. "
             "You must add settings `CMD_WHITE_LIST` or `ONLY_SHORTCUT_CMD=True` for a public bot"
         )
